@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background: cornflowerblue;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  margin: 10px auto;
+}
+
+.container {
+  max-width: 900px;
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#description {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.label, .input {
+  display: inline-block;
+  width: 40%;
+}
+
+.label {
+  vertical-align: top;
+  text-align: right;
+  padding: 5px;
+}
+
+.input {
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+#name, #email, #age {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.radio, .checkbox {
+  position: relative;
+}
+
+input {
+  margin-right: 5px;
+}
+
+.dropdown {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+}
+
+input[name=age] {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+}
+
+@media screen and (max-width: 585px) {
+  body {
+    font-size: 16px;
+  }
+
+  .label, .input {
+    width: 100%;
+  }
+
+  .input {
+    float: left;
+  }
+
+  .label {
+    text-align: left;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
