@@ -21,7 +21,7 @@
                     <label id="name-label" for="name">Name: *</label>
                 </div>
                 <div class="input">
-                    <input name="name" id="name" type="text" placeholder="Enter your name" autofocus="" required="">
+                    <input name="name" id="name" type="text" placeholder="Enter your name" required autofocus>
                 </div>
             </div>
             <div class="row">
@@ -29,7 +29,7 @@
                     <label id="email-label" for="email">E-mail: *</label>
                 </div>
                 <div class="input">
-                    <input type="email" name="email" id="email" required="" placeholder="Enter your e-mail">
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
                 </div>
             </div>
             <div class="row">
@@ -37,7 +37,7 @@
                     <label id="number-label" for="age">Age: *</label>
                 </div>
                 <div class="input">
-                    <input type="number" name="age" id="number" min="10" max="100" required="" placeholder="Age">
+                    <input type="number" name="age" id="number" min="10" max="100" placeholder="Age" required>
                 </div>
             </div>
             <div class="row">
@@ -46,21 +46,21 @@
                 </div>
                 <div class="input">
                     <select id="dropdown" name="role" class="dropdown">
-                        <option disabled="" value="">Select an option</option>
+                        <option disabled value="">Select an option</option>
                         <option value="student">Student</option>
-                        <option value="job">Full Time Job</option>
-                        <option value="learner">Full Time Learner</option>
-                        <option value="none">Prefer not to say</option>
+                        <option value="job">Employee</option>
+                        <option value="freelancer">Freelancer</option>
                         <option value="other">Other</option>
+                        <option value="none">Prefer not to say</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="label">
-                    <label for="userRating">How likely would you use React.js in your future projects again?</label>
+                    <label for="likely">How likely would you use React.js in your future projects again?</label>
                 </div>
                 <div class="input">
-                    <ul style="list-style: none;">
+                    <ul>
                         <li class="radio">
                             <label>
                                 <input name="radio-buttons" value="1" type="radio" class="likely">Definitely
@@ -95,11 +95,11 @@
             </div>
             <div class="row">
                 <div class="label">
-                    <label for="preferences">Which libraries / frameworks do you use with React?
+                    <label for="lib">Which libraries / frameworks do you use with React?
                         <br>(Check all that apply): </label>
                 </div>
                 <div class="input">
-                    <ul id="preferences" style="list-style: none;">
+                    <ul id="lib" style="list-style: none;">
                         <li class="checkbox">
                             <label>
                                 <input name="prefer" value="1" type="checkbox" class="checks">Redux</label>
@@ -126,7 +126,7 @@
                     <label for="comments">Any suggestions for next survey?</label>
                 </div>
                 <div class="input">
-                    <textarea id="comments" style="height: 75px; resize: vertical;" name="comment" placeholder="Your comments..."></textarea>
+                    <textarea id="feedback" name="feedback" placeholder="Your comments..."></textarea>
                 </div>
             </div>
             <button id="submit" type="submit">Submit</button>

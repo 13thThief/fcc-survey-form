@@ -101,6 +101,10 @@ input {
   margin-right: 5px;
 }
 
+ul {
+  list-style: none;
+}
+
 .dropdown {
   height: 30px;
   padding: 5px;
@@ -132,6 +136,8 @@ input[name=age] {
 
   textarea {
     width: 90%;
+    height: 75px;
+    resize: vertical;
   }
 }
 
